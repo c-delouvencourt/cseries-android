@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+             android:background="#2a2a2a">
+
+    <TextView
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Saison 1"
+        android:id="@+id/saisons_name"
+        android:layout_gravity="left|top"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:textIsSelectable="true"/>
+
+    <Button
+        android:layout_width="148dp"
+        android:layout_height="34dp"
+        android:text="Regarder"
+        android:id="@+id/saisons_card_see"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_button"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+
+</FrameLayout>

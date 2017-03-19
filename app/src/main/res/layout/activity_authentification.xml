@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="214dp"
+        android:layout_height="73dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nom d&apos;utilisateur"
+        android:id="@+id/login_usernameInfo"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:focusable="true"
+        android:layout_marginLeft="43dp" />
+
+    <EditText
+        android:layout_width="297dp"
+        android:layout_height="40dp"
+        android:id="@+id/email"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:singleLine="true"
+        android:shadowColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:editable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mot de passe"
+        android:id="@+id/login_motdepasse"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:focusable="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="43dp" />
+
+    <EditText
+        android:layout_width="291dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:id="@+id/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/login_button"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:indeterminate="false"
+        android:visibility="gone" />
+
+</LinearLayout>
